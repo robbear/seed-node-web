@@ -1,7 +1,7 @@
 seed-node-web
 =============
 
-Seed for Node.js/Express.js web applications
+Seed for Node.js/Express.js web applications with Express application mounting as MVC controller pattern.
 
 Instructions
 -------------
