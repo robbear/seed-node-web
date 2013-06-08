@@ -11,11 +11,19 @@ var _bunyanLogger = bunyan.createLogger({
             count: 10
         },
         {
+            level: 'info',
+            stream: process.stdout
+        },
+        {
             level: 'error',
             path: './logfiles/web-errors.log',
             type: 'rotating-file',
             period: '1d',
             count: 10
+        },
+        {
+            level: 'error',
+            stream: process.stderr
         }
     ],
     serializers: {

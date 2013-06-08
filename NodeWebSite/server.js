@@ -94,5 +94,5 @@ app.use(function(req, res, next) {
 });
 
 app.listen(process.env.PORT || 1337);
-logger.bunyanLogger().info("NodeWebSite server listening on port %s in %s mode", process.env.PORT || 1337, hfConfig.environment);
+logger.bunyanLogger().info("NodeWebSite server listening on port %s in %s mode", process.env.PORT || 1337, config.environment);
 logger.bunyanLogger().info("Using node.js %s, connect %s, Express %s", process.version, connect.version, express.version);
